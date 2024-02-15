@@ -1,0 +1,12 @@
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Start test all:1:Problem B.2: is_embedded.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Test all:1:Problem B.2: is_embedded is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: End test all:1:Problem B.2: is_embedded.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Start test all:3:Problem B.4: any, all, repeated.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Test all:3:Problem B.4: any, all, repeated is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: End test all:3:Problem B.4: any, all, repeated.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Start test all:5:Part C: member.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Test all:5:Part C: member is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: End test all:5:Part C: member.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Start test all:7:Part C: random inserts: ordered.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: Test all:7:Part C: random inserts: ordered is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#02 I: End test all:7:Part C: random inserts: ordered.

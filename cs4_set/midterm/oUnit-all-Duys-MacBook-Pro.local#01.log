@@ -1,0 +1,15 @@
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Start test all:0:Problem B.1: is_prefix, is_subsequence.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Test all:0:Problem B.1: is_prefix, is_subsequence is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: End test all:0:Problem B.1: is_prefix, is_subsequence.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Start test all:2:Problem B.3: remove_first, same_elements.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Test all:2:Problem B.3: remove_first, same_elements is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: End test all:2:Problem B.3: remove_first, same_elements.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Start test all:4:Problem B.5: compose_all.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Test all:4:Problem B.5: compose_all is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: End test all:4:Problem B.5: compose_all.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Start test all:6:Part C: insert.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Test all:6:Part C: insert is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: End test all:6:Part C: insert.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Start test all:8:Part C: random inserts: balanced.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: Test all:8:Part C: random inserts: balanced is successful.
+2024-02-15T18:24:18+00:00 Duys-MacBook-Pro.local#01 I: End test all:8:Part C: random inserts: balanced.

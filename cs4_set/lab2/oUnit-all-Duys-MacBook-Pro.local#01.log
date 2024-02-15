@@ -1,0 +1,30 @@
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:0:fast_expt.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:0:fast_expt is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:0:fast_expt.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:2:fast_mult.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:2:fast_mult is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:2:fast_mult.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:4:isum.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:4:isum is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:4:isum.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:6:factorial_rec.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:6:factorial_rec is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:6:factorial_rec.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:8:factorial_iter.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:8:factorial_iter is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:8:factorial_iter.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:10:sum.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:10:sum is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:10:sum.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:12:compose.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:12:compose is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:12:compose.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:14:smooth.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:14:smooth is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:14:smooth.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:16:is_prime.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:16:is_prime is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:16:is_prime.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Start test all:17:smallest_prime_factor.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: Test all:17:smallest_prime_factor is successful.
+2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#01 I: End test all:17:smallest_prime_factor.
