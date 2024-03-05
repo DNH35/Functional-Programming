@@ -6,9 +6,9 @@ type point = {x : float; y : float}
 type segment = {startp: point; endp : point}
 
 let midpoint_segment (seg : segment) =
-  let midpoint_x = abs_float (seg.endp.x -. seg.startp.x) /. 2. in
-  let midpoint_y = abs_float (seg.endp.y -. seg.startp.y) /. 2. in
-  {x = midpoint_x ; y = midpoint_y}
+  let midpoint_x = (seg.startp.x +. seg.endp.x) /. 2.0 in
+  let midpoint_y = (seg.startp.y +. seg.endp.y) /. 2.0 in
+  { x = midpoint_x ; y = midpoint_y }
 
 let segment_length (seg : segment) = 
   sqrt ((seg.endp.x -. seg.startp.x) *. (seg.endp.x -. seg.startp.x) +. 
@@ -36,17 +36,26 @@ type rectangle2 = {lower_x : float; upper_x : float; lower_y : float; upper_y : 
 let make_rectangle ll ur = 
   {lower_left = ll ; upper_right = ur}
 
-let rectangle_lower_segment (rect : rectangle) = 
-  make_segment rect.lower_left (make_point rect.upper_right.x rect.lower_left.y)
-
-let rectangle_upper_segment (rect : rectangle) = 
-  make_segment (make_point rect.lower_left.x rect.upper_right.y) rect.upper_right
-
-let rectangle_left_segment (rect : rectangle) = 
-  make_segment rect.lower_left (make_point rect.lower_left.x rect.upper_right.y)
-
-let rectangle_right_segment (rect : rectangle) = 
-  make_segment (make_point rect.upper_right.x rect.lower_left.y) rect.upper_right
+  let rectangle_lower_segment (rect : rectangle) = 
+    let _, lower_y = get_coords rect.lower_left in
+    let upper_x, _ = get_coords rect.upper_right in
+    make_segment rect.lower_left (make_point upper_x lower_y)
+  
+  let rectangle_upper_segment (rect : rectangle) = 
+    let lower_x, _ = get_coords rect.lower_left in
+    let _, upper_y = get_coords rect.upper_right in
+    make_segment (make_point lower_x upper_y) rect.upper_right
+  
+  let rectangle_left_segment (rect : rectangle) = 
+    let lower_x, _ = get_coords rect.lower_left in
+    let _, upper_y = get_coords rect.upper_right in
+    make_segment rect.lower_left (make_point lower_x upper_y)
+  
+  let rectangle_right_segment (rect : rectangle) = 
+    let _, lower_y = get_coords rect.lower_left in
+    let upper_x, _ = get_coords rect.upper_right in
+    make_segment (make_point upper_x lower_y) rect.upper_right
+  
 
 let rectangle_perimeter (rect : rectangle) = 
   2. *. segment_length (rectangle_lower_segment rect) +. 
@@ -79,6 +88,7 @@ let rectangle_area2 (rect : rectangle2) =
   segment_length (rectangle_lower_segment2 rect) *.
   segment_length (rectangle_left_segment2 rect)
 
+(*A.3*)
 type ('a, 'b) pair = Pair of 'a * 'b
 let first (Pair (x, _)) = x
 let second (Pair (_, y)) = y
@@ -287,12 +297,13 @@ let branch_structure = function
   | Weight (_, weight) -> `Weight weight
   | Structure (_, sub_structure) -> `Structure sub_structure
 
-let rec branch_weight1 = function
+  let rec branch_weight1 = function
   | Weight (_, weight) -> weight
   | Structure (_, sub_structure) -> total_weight1 sub_structure
 
-and total_weight1 mobile_branch = 
-  branch_weight1 (left_branch mobile_branch) + branch_weight1 (right_branch mobile_branch)
+  and total_weight1 = function
+    | Mobile (l, r) -> branch_weight1 l + branch_weight1 r
+
 
 let rec branch_weight2 branch = 
   match branch_structure branch with 
@@ -389,7 +400,7 @@ let rec tree_map map (Tree lst) =
 in 
   Tree (List.map map_num lst)
 
-(*B2*)
+(*B3*)
 let square_tree'' tree = tree_map (fun n -> n * n) tree
 
 (*Part C*)

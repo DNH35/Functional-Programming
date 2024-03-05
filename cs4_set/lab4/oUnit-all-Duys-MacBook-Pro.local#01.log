@@ -1,0 +1,18 @@
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Start test all:0:make_point/get_coords.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Test all:0:make_point/get_coords is successful.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: End test all:0:make_point/get_coords.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Start test all:2:segment_length.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Test all:2:segment_length is successful.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: End test all:2:segment_length.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Start test all:4:make_rectangle.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Test all:4:make_rectangle is successful.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: End test all:4:make_rectangle.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Start test all:6:integer pairs.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Test all:6:integer pairs is successful.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: End test all:6:integer pairs.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Start test all:8:unary integers 2.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Test all:8:unary integers 2 is successful.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: End test all:8:unary integers 2.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Start test all:13:simplify.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: Test all:13:simplify is successful.
+2024-03-01T09:54:34+00:00 Duys-MacBook-Pro.local#01 I: End test all:13:simplify.

@@ -7,7 +7,7 @@ let ni = num_of_int     (* convert int -> num *)
 (*
 Part A:
 
-0. 
+A.0. 
 Time complexity: O(log(n))
 The function calls itself to continously divides n by 2 until n becomes an odd number > 1 or 1,
 so this function has log time complexity because the number of calls is logarithmically proportional
@@ -18,7 +18,7 @@ This is a tail recursion so the OCaml, which OCaml compilers cann apply tail rec
 use constant stack space. So the function has a constant space complexity
 
 
-1.
+A.1.
 Space complexity: O(N)
 Consider fib(7) in applicative order evaluation:
 fib(7) will be evaluated to fib(6) + fib(5)
@@ -41,7 +41,7 @@ Thus, we can see that the number of elements can go up to fib(7), fib(6), fib(5)
 so we can conclude that the space complexity is O(N) because the number of call is linearly proportional
 to the number of element, approximately. 
 
-2. 
+A.2. 
 
 1.
   When sine 12.5 is called, the function will be evaluated as follow:
@@ -81,7 +81,7 @@ to the number of element, approximately.
 *)
 
 (*
-3.  
+A.3.  
 *)
 let rec fast_expt b n =
   let is_even m = m mod 2 = 0 in
@@ -103,7 +103,7 @@ let ifast_expt b n =
   iter 1 b n
 
 (*
-4.  
+A.4.  
 *)
 let fast_mult a b =
   let double m = m + m in
@@ -123,6 +123,7 @@ let fast_mult a b =
 in
 fast_mult_helper a b
 
+(*A.5*)
 let ifast_mult a b =
   let double m = m + m in
   let rec halve m = 
@@ -139,22 +140,27 @@ in
 ifast_mult 0 a b
 
 (*
-6.
-  Time Complexity: O(log(n))
+A.6.
+  Time Complexity: O(n)
   Space Complexity: O(log(n))
 
-    The time complexity is O(log(n)) because the function continously divides n by 2 until n <= 1,
-    so the number of calls on foo is approximately proportional to 2 * log_2(n) (because we're calling foo two times)
-    However, big O doesn't care about constant factor, so the time complexity is O(log(n)). Each time foo calls itself 
-    when n > 1, there's pending operaiton and the stack state can go up to log_2(n) + 1 (for example, for foo 4, the stack state
-    contains at most foo 4, foo 2, foo 1). Again, big O doesn't care about constant factor, so the space complexity is O(log(n))
-    Notifce that because f is evaluated at constant time, so it doesn't affect the time and space complexity
+    At each recursive call, the function divdes n by two, and foo is making a recursive call and halving n twice, which means
+    this has a binary tree recusive calls structure. Now recall that tree recursion has exponential time complexityj, so at
+    each level of the recursive tree, the function calls are exponentially increased, leading to the time complexity of O(2^(logn)),
+    which simplifies to having O(n). 
+    
+    Each time foo calls itself when n > 1, there's pending operaiton and the stack state can go up to log_2(n) + 1 
+    (for example, for foo 4, the stack statevcontains at most foo 4, foo 2, foo 1). Big O doesn't care about 
+    constant factor, so the space complexity is O(log(n)) Notifce that because f is evaluated at constant time, 
+    so it doesn't affect the time and space complexity
 
-7.
+A.7.
   1. The function is linear iterative recursion because fib n has an internal recursive method last_two that has
   an iterative-like structure by accumlating values through recursive calls without the need of extra space. 
   2. Time complexity is O(n) because the number of recursive calls is proportional to n, and each call takes constant time. 
-     Space complexity is O(1) because it's a tail recursion and OCaml compilers can apply tail recursion optimization. 
+     Space complexity is O(n) because at each recursive calls, there's pending operations on the addition, and the function
+     is decrementing n as it calls itself, so the number of recursive calls stored in the stack is proportional to n, leading to
+     the space complexity to be O(n). 
 *)
 
 (*
@@ -162,14 +168,17 @@ Part B
 *)
 
 (*
-1.
+
+B.1
+
 a. (fun x y -> x * (2 + y)) 20 (2 * 4)   
 b. (fun a b c -> sqrt (b *. b -. 4.0 *. a *. c)) 1.0 20.0 3.0
 c. (fun x -> (fun y -> (fun z -> x * y * z) 3) 2) 1
 d. (fun x -> (fun x -> (fun x -> x * x * x) 3) 2) 1
    (fun x -> (x * x * x) 3) (*shielding*)
 
-2.
+
+B.2
 
 let x = 2 * 10
 and y = 3 + 4
@@ -218,7 +227,7 @@ Substitute these values to x * y * z
 
 Result = 6160
 
-3.
+B.3
 
 (fun x y z -> x + y + z) 10 (x * 2) (y + 3)
 
@@ -232,7 +241,8 @@ let z = y + 3
 in x + y + z
 *)
 
-(*1*)
+(*Part C*)
+(*C.1*)
 let isum term a next b =
   let rec iter a result =
     if a >/ b
@@ -241,7 +251,7 @@ let isum term a next b =
   in
     iter a (ni 0)
 
-(*2*)
+(*C.2*)
 let rec product_rec_helper term a next b =
   if a >/ b
     then (ni 1)
@@ -272,7 +282,7 @@ let pi_product n =
     product_iter pi_term (ni 1) (fun n -> n +/ (ni 1)) n
 let pi_approx = float_of_num ((ni 2) */ pi_product (ni 1000))  (* defined in terms of pi_product *)
 
-(*3*)
+(*C.3*)
 let rec accumulate_rec combiner null_value term a next b =
   if a >/ b
     then null_value
@@ -292,16 +302,16 @@ let sum term a next b =
 let product term a next b =
   accumulate_iter ( */ ) (ni 1) term a next b
 
-(*4*)
+(*C.4*)
 let compose f g x = f (g x)
 
-(*5*)
+(*C.5*)
 let rec repeated f n = 
   match n with
     | 1 -> f
     | _ -> compose f (repeated f (n - 1))
 
-(*6*)
+(*C.6*)
 let smooth dx f = 
   fun x -> (f (x -. dx) +. f(x) +. f(x +. dx)) /. 3.0
 
@@ -311,6 +321,8 @@ let rec nsmoothed dx f n =
   | _ -> nsmoothed dx (smooth dx f) (n - 1)
 
 (*Part D*)
+
+(*D.1*)
 let is_prime n =
   if n <= 1
     then false
@@ -324,6 +336,7 @@ else
    in
    is_prime_helper n (int_of_float(sqrt (float_of_int(n))) + 1)
 
+(*D.2*)
 let smallest_prime_factor n = 
   if n < 2 || is_prime n
     then invalid_arg "Invalid argument, n < 2 or n is prime"

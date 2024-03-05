@@ -1,24 +1,24 @@
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:1:ifast_expt.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:1:ifast_expt is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:1:ifast_expt.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:3:ifast_mult.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:3:ifast_mult is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:3:ifast_mult.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:5:product_rec.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:5:product_rec is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:5:product_rec.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:7:product_iter.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:7:product_iter is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:7:product_iter.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:9:pi_approx.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:9:pi_approx is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:9:pi_approx.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:11:product.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:11:product is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:11:product.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:13:repeated.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:13:repeated is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:13:repeated.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Start test all:15:nsmoothed.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: Test all:15:nsmoothed is successful.
-2024-01-25T02:14:53+00:00 Duys-MacBook-Pro.local#02 I: End test all:15:nsmoothed.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:1:ifast_expt.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:1:ifast_expt is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:1:ifast_expt.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:3:ifast_mult.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:3:ifast_mult is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:3:ifast_mult.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:5:product_rec.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:5:product_rec is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:5:product_rec.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:7:product_iter.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:7:product_iter is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:7:product_iter.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:8:factorial_iter.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:8:factorial_iter is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:8:factorial_iter.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:11:product.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:11:product is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:11:product.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:12:compose.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:12:compose is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:12:compose.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Start test all:15:nsmoothed.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: Test all:15:nsmoothed is successful.
+2024-02-18T07:31:14+00:00 Duys-MacBook-Pro.local#02 I: End test all:15:nsmoothed.
